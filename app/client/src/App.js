@@ -1,6 +1,7 @@
 import React from "react";
 import logo from './logo.svg';
 import './App.css';
+import Container from './Container.js'
 
 function App() {
   const [data, setData] = React.useState(null);
@@ -18,6 +19,7 @@ function App() {
           {!data ? "Loading..." : data}
         </p>
       </header>
+      <Container id="main-container">Content here</Container>
     </div>
   );
 }
