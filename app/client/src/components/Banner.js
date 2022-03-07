@@ -3,7 +3,15 @@ import React from "react";
 export default function Banner(props) {
 	const {id} = props;
 	const style = {
-		"background-image": props.image
+		backgroundImage: `url(${props.image})`,
+		backgroundSize: "cover",
+		backgroundPosition: "center",
+		height: "300px",
+		textAlign: "center",
+		display: "flex",
+		flexDirection: "column",
+		justifyContent: "flex-end",
+		alignItems: "center",
 	};
 	return (
 		<>
