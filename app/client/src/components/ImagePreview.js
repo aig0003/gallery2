@@ -1,5 +1,5 @@
 import React from "react";
-import PillButton from './PillButton.js'
+
 
 export default function ImagePreview(props) {
 	const {id, image, aspect, heading, content} = props;
@@ -12,7 +12,7 @@ export default function ImagePreview(props) {
 		aspectRatio: `${aspect}`,
 		display: "flex",
 		flexDirection: "column",
-		justifyContent: "flex-end",
+		justifyContent: "space-between",
 		alignItems:"center",
 		textShadow:"0 2px 4px black",
 		
@@ -28,7 +28,7 @@ export default function ImagePreview(props) {
 			<div className="container" id={id} style={container_style}>
 				{heading && <h3 style={heading_style}>{heading}</h3>}
 				{content && <p style={content_style}>{content}</p>}
-				<PillButton color="#f66">View</PillButton>
+				
 			</div>
 		</>
 	);
