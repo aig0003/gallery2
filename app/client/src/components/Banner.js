@@ -1,5 +1,5 @@
 import {React, useState, useEffect} from "react";
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+
 import $ from "jquery";
 
 var bannerID;
